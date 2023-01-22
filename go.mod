@@ -1,4 +1,4 @@
-module endpoint_scanner
+module subdomain_and_port_scanner
 
 go 1.19
 
