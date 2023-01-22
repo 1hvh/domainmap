@@ -16,7 +16,7 @@ func main() {
 	}
 	target := args[1]
 
-	httpTimeout := time.Duration(5 * time.Second)
+	httpTimeout := 5 * time.Second
 	httpClient := resty.New().SetTimeout(httpTimeout).SetRedirectPolicy(resty.FlexibleRedirectPolicy(4))
 
 	p, _ := ants.NewPool(256)
